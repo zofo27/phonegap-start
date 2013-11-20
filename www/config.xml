@@ -3,23 +3,23 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
+        id        = "com.cartesnl.prueba"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>prueba</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Aplicacion prueba.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
+    <author href="http://cartesnl.com" email="support@phonegap.com">
         PhoneGap Team
     </author>
 
-    <!--
-        Enable individual API permissions here.
-        The "device" permission is required for the 'deviceready' event.
-    -->
+    <feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+    </feature>
+
     <feature name="http://api.phonegap.com/1.0/device" />
 
     <!--
